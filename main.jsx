@@ -1,13 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import './index.css'
 
-function App() {
-  return (
-    <div>
-      <h1>Bienvenue sur l'app Calandreta</h1>
-      <p>Ceci est un test de déploiement avec Vercel.</p>
-    </div>
-  )
-}
-
-ReactDOM.createRoot(document.getElementById('root')).render(<App />)
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
